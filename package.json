@@ -1,5 +1,5 @@
 {
-  "name": "Dashboard_React-GDGoC",
+  "name": "dashboard_react-gdgoc",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -8,23 +8,18 @@
     "@refinedev/core": "^4.47.1",
     "@refinedev/devtools": "^1.1.32",
     "@refinedev/kbar": "^1.3.6",
+    "@refinedev/react-router": "^1.0.0",
+    "@refinedev/simple-rest": "^5.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router": "^7.0.2",
-    "@refinedev/simple-rest": "^5.0.1",
-    "@refinedev/react-router": "^1.0.0"
+    "react-router": "^7.0.2"
   },
   "devDependencies": {
-    "@types/node": "^18.16.2",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.57.1",
-    "@typescript-eslint/parser": "^5.57.1",
+    "@babel/preset-react": "^7.26.3",
     "@vitejs/plugin-react": "^4.0.0",
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
-    "typescript": "^5.4.2",
     "vite": "^4.3.1"
   },
   "scripts": {
