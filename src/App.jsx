@@ -1,15 +1,10 @@
 import {
   Refine,
-  GitHubBanner,
   WelcomePage,
-  Authenticated,
-  AuthPage,
-  ErrorComponent,
 } from "@refinedev/core";
 import { DevtoolsPanel, DevtoolsProvider } from "@refinedev/devtools";
 import { RefineKbar, RefineKbarProvider } from "@refinedev/kbar";
 
-import dataProvider from "@refinedev/simple-rest";
 import { BrowserRouter, Route, Routes, Outlet } from "react-router";
 import routerBindings, {
   NavigateToResource,
@@ -20,14 +15,17 @@ import routerBindings, {
 import { Layout } from "./components/layout";
 import "./App.css";
 
+import { dataProvider } from "./utils/dataProvider";
+import { authProvider } from "./utils/authProvider";
+
 function App() {
   return (
     <BrowserRouter>
-      <GitHubBanner />
       <RefineKbarProvider>
         <DevtoolsProvider>
           <Refine
-            dataProvider={dataProvider("https://api.fake-rest.refine.dev")}
+            authProvider={authProvider}
+            dataProvider={dataProvider}
             routerProvider={routerBindings}
             options={{
               syncWithLocation: true,
